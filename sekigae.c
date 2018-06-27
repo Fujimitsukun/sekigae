@@ -9,7 +9,7 @@ int main(void)
 	
 		int member[41] = { 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41 };
 		int change[2];
-		int i, j, k, h, feedback;
+		int h,i,j,k,feedback;
 		int mae[12] = { 0 };
 		int elevenrandom[11] = { 0,1,2,3,4,5,6,7,8,9,10 };
 		srand((unsigned)time(NULL));
@@ -42,14 +42,14 @@ int main(void)
 			elevenrandom[j] = h;
 		}
 
-		for (j = 0; j < 12; j++)
+		for (j = 0; j < 11; j++)
 		{
-			for (i = 12; i < 41; i++)
+			for (i = 11; i < 41; i++)
 			{
 				if (member[i] == mae[j])
 				{
 					k = 0;
-					for (h = 0; h < 12; h++)
+					for (h = 0; h < 11; h++)
 					{
 						if (member[elevenrandom[k]] != mae[0] && member[elevenrandom[k]] != mae[1] && member[elevenrandom[k]] != mae[2] && member[elevenrandom[k]] != mae[3] && member[elevenrandom[k]] != mae[4] && member[elevenrandom[k]] != mae[5] && member[elevenrandom[k]] != mae[6] && member[elevenrandom[k]] != mae[7] && member[elevenrandom[k]] != mae[8] && member[elevenrandom[k]] != mae[9] && member[elevenrandom[k]] != mae[10])
 						{
